@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="main">
+        <header> To Do List</header>
+        <nav>
+            <form>
+               <input type="text" name="todo" placeholder="Add a todo..."> 
+               <input type="date" name="date" placeholder="mm/dd//yyyy">
+               <button id="add" type="submit" >Add</button>
+            </form>
+        </nav>
+        <nav>
+            <select id="filter" name="filter">
+                <option value="all">All Tasks</option>
+                <option value="done">Completed</option>
+                <option value="pending">Pending</option>
+            </select>
+            <button name="delete_all">Delete All</button>
+        </nav>
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
