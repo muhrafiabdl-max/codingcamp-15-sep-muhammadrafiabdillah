@@ -1,0 +1,180 @@
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e2e8f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* ===== CONTAINER ===== */
+#main {
+  background: #111827;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  width: 650px;
+  transition: 0.3s ease;
+}
+
+#main:hover {
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.6);
+}
+
+/* ===== HEADER ===== */
+#main header {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.8rem;
+  color: #60a5fa;
+  letter-spacing: 1px;
+}
+
+/* ===== FORM ===== */
+nav form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+nav form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  outline: none;
+  background: #1e293b;
+  color: #f8fafc;
+  flex: 1;
+  transition: 0.2s;
+}
+
+nav form input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 6px #3b82f6;
+}
+
+nav form input[type="date"] {
+  max-width: 180px;
+}
+
+#add {
+  padding: 0 18px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+#add:hover {
+  background: #2563eb;
+  transform: scale(1.05);
+}
+
+/* ===== ACTION BUTTONS ===== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav select,
+nav button {
+  background: #1e293b;
+  color: #f1f5f9;
+  border: 1px solid #334155;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav select:hover,
+nav button:hover {
+  background: #334155;
+  border-color: #3b82f6;
+}
+
+nav button[name="delete_all"] {
+  background: #ef4444;
+  border: none;
+  color: #fff;
+}
+
+nav button[name="delete_all"]:hover {
+  background: #dc2626;
+  transform: scale(1.05);
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  background: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+thead {
+  background: #0f172a;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: #93c5fd;
+}
+
+thead th {
+  padding: 14px;
+  text-align: left;
+  font-weight: 600;
+}
+
+tbody tr {
+  border-bottom: 1px solid #334155;
+  transition: background 0.2s;
+}
+
+tbody tr:hover {
+  background: rgba(59, 130, 246, 0.15);
+}
+
+tbody td {
+  padding: 12px;
+  text-align: left;
+  color: #f8fafc;
+  font-size: 0.95rem;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+tbody td button {
+  background: transparent;
+  border: none;
+  color: #93c5fd;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin: 0 4px;
+  transition: 0.2s;
+}
+
+tbody td button:hover {
+  color: #60a5fa;
+  transform: scale(1.2);
+}
